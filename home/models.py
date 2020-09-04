@@ -47,3 +47,10 @@ class Demo(models.Model):
 class Test(models.Model):
     "Generated Model"
     tests = models.BigIntegerField()
+
+
+class Student(models.Model):
+    "Generated Model"
+    name = models.CharField(
+        max_length=256,
+    )
