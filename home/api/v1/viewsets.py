@@ -1,6 +1,7 @@
 from rest_framework import viewsets
 from rest_framework import authentication
 from .serializers import (
+    CarsSerializer,
     CustomTextSerializer,
     DemoSerializer,
     HomePageSerializer,
@@ -20,7 +21,7 @@ from home.api.v1.serializers import (
     HomePageSerializer,
     UserSerializer,
 )
-from home.models import CustomText, Demo, HomePage, Student, Test
+from home.models import Cars, CustomText, Demo, HomePage, Student, Test
 
 
 class SignupViewSet(ModelViewSet):
@@ -85,3 +86,12 @@ class StudentViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = Student.objects.all()
+
+
+class CarsViewSet(viewsets.ModelViewSet):
+    serializer_class = CarsSerializer
+    authentication_classes = (
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication,
+    )
+    queryset = Cars.objects.all()

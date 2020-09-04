@@ -54,3 +54,10 @@ class Student(models.Model):
     name = models.CharField(
         max_length=256,
     )
+
+
+class Cars(models.Model):
+    "Generated Model"
+    handle = models.CharField(
+        max_length=256,
+    )
