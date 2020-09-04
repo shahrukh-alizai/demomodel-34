@@ -49,11 +49,6 @@ class Test(models.Model):
     tests = models.BigIntegerField()
 
 
-class NewModel(models.Model):
-    "Generated Model"
-    hello = models.BigIntegerField()
-
-
 class Std(models.Model):
     "Generated Model"
     asdfsdf = models.BigIntegerField()
