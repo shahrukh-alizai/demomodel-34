@@ -52,8 +52,3 @@ class Test(models.Model):
 class Std(models.Model):
     "Generated Model"
     asdfsdf = models.BigIntegerField()
-
-
-class Books(models.Model):
-    "Generated Model"
-    name = models.BigIntegerField()
