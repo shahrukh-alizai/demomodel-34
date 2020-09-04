@@ -49,13 +49,6 @@ class Test(models.Model):
     tests = models.BigIntegerField()
 
 
-class Student(models.Model):
-    "Generated Model"
-    name = models.CharField(
-        max_length=256,
-    )
-
-
 class Cars(models.Model):
     "Generated Model"
     handle = models.CharField(
