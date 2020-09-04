@@ -47,10 +47,3 @@ class Demo(models.Model):
 class Test(models.Model):
     "Generated Model"
     tests = models.BigIntegerField()
-
-
-class Cars(models.Model):
-    "Generated Model"
-    handle = models.CharField(
-        max_length=256,
-    )
