@@ -47,3 +47,13 @@ class Demo(models.Model):
 class Test(models.Model):
     "Generated Model"
     tests = models.BigIntegerField()
+
+
+class NewModel(models.Model):
+    "Generated Model"
+    hello = models.BigIntegerField()
+
+
+class Std(models.Model):
+    "Generated Model"
+    asdfsdf = models.BigIntegerField()
